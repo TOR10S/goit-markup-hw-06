@@ -44,8 +44,63 @@
             </li>
           </ul>
         </address>
+        <button class="header-button"><svg class="header-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+        </svg></button>
       </div>
     </header>
+    <div class="mobile-menu is-open">
+      <button class="mobile-menu-close" type="close-modal">
+        <svg class="close-button-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list">
+        <li>
+          <a class="mobile-menu-link menu-cur" href="./index.html">Studio</a>
+        </li>
+        <li><a class="mobile-menu-link" href="">Portfolio</a></li>
+        <li><a class="mobile-menu-link" href="">Contacts</a></li>
+      </ul>
+      <ul class="mobile-menu-contacts">
+        <li>
+          <a class="mobile-contacts-item contacts-cur" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li>
+          <a class="mobile-contacts-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu-soc">
+        <li class="team-icons-list">
+          <a href="" class="team-icons">
+            <svg class="team-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram-2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-icons-list">
+          <a href="" class="team-icons">
+            <svg class="team-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-icons-list">
+          <a href="" class="team-icons">
+            <svg class="team-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-icons-list">
+          <a href="" class="team-icons">
+            <svg class="team-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <main>
       <section class="hero-section">
         <div class="container">
@@ -130,6 +185,7 @@
           <ul class="our-team-section-ul">
             <li class="our-team-section-li">
               <img
+                srcset="./images/team-img-4 1x, ./images/team-img-4-2x 2x"
                 src="./images/team-img-1.jpg"
                 alt="Man-with-laptop"
                 width="264"
@@ -173,6 +229,7 @@
             </li>
             <li class="our-team-section-li">
               <img
+                srcset="./images/team-img-2 1x, ./images/team-img-2-2x 2x"
                 src="./images/team-img-2.jpg"
                 alt="Man-in-blue-shirt"
                 width="264"
@@ -216,6 +273,7 @@
             </li>
             <li class="our-team-section-li">
               <img
+                srcset="./images/team-img-3 1x, ./images/team-img-3-2x 2x"
                 src="./images/team-img-3.jpg"
                 alt="Woman-in-pink-sweater"
                 width="264"
@@ -259,6 +317,7 @@
             </li>
             <li class="our-team-section-li">
               <img
+                srcset="./images/team-img-4 1x, ./images/team-img-4-2x 2x"
                 src="./images/team-img-4.jpg"
                 alt="Man-in-gray-T-shirt"
                 width="264"
@@ -309,13 +368,33 @@
           <ul class="our-portfolio-section-ul">
             <li class="our-portfolio-section-li">
               <div class="our-portfolio-section-wraper">
+                <picture>
+                  <source
+                    srcset="./images/project-card-img-1.jpg 1x, ./images/project-card-img-1-2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/project-card-img-1-tablet.jpg    1x,
+                      ./images/project-card-img-1-tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/project-card-img-1-phone.jpg    1x,
+                      ./images/project-card-img-1-phone-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                 <img
                   src="./images/project-card-img-1.jpg"
                   alt="project-card-img-1"
-                  width="360"
-                  height="300"
+                  width=""
+                  height=""
                   class=""
                 />
+              </picture>
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -329,11 +408,30 @@
             </li>
             <li class="our-portfolio-section-li">
               <div class="our-portfolio-section-wraper">
+                <picture>
+                  <source
+                    srcset="./images/project-card-img-2.jpg 1x, ./images/project-card-img-2-2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/project-card-img-2-tablet.jpg    1x,
+                      ./images/project-card-img-2-tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/project-card-img-2-phone.jpg    1x,
+                      ./images/project-card-img-2-phone-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                 <img
                   src="./images/project-card-img-2.jpg"
                   alt="project-card-img-2"
-                  width="360"
-                  height="300"
+                  width=""
+                  height=""
                   class=""
                 />
                 <p class="portfolio-cover-text">
@@ -351,11 +449,30 @@
             </li>
             <li class="our-portfolio-section-li">
               <div class="our-portfolio-section-wraper">
+                                <picture>
+                  <source
+                    srcset="./images/project-card-img-3.jpg 1x, ./images/project-card-img-3-2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/project-card-img-3-tablet.jpg    1x,
+                      ./images/project-card-img-3-tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/project-card-img-3-phone.jpg    1x,
+                      ./images/project-card-img-3-phone-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                 <img
                   src="./images/project-card-img-3.jpg"
                   alt="project-card-img-3"
-                  width="360"
-                  height="300"
+                  width=""
+                  height=""
                   class=""
                 />
                 <p class="portfolio-cover-text">
@@ -371,11 +488,30 @@
             </li>
             <li class="our-portfolio-section-li">
               <div class="our-portfolio-section-wraper">
+                                <picture>
+                  <source
+                    srcset="./images/project-card-img-4.jpg 1x, ./images/project-card-img-4-2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/project-card-img-4-tablet.jpg    1x,
+                      ./images/project-card-img-4-tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/project-card-img-4-phone.jpg    1x,
+                      ./images/project-card-img-4-phone-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                 <img
                   src="./images/project-card-img-4.jpg"
                   alt="project-card-img-4"
-                  width="360"
-                  height="300"
+                  width=""
+                  height=""
                   class=""
                 />
                 <p class="portfolio-cover-text">
@@ -391,11 +527,30 @@
             </li>
             <li class="our-portfolio-section-li">
               <div class="our-portfolio-section-wraper">
+                                <picture>
+                  <source
+                    srcset="./images/project-card-img-6.jpg 1x, ./images/project-card-img-6-2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/project-card-img-6-tablet.jpg    1x,
+                      ./images/project-card-img-6-tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/project-card-img-6-phone.jpg    1x,
+                      ./images/project-card-img-6-phone-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                 <img
                   src="./images/project-card-img-6.jpg"
                   alt="project-card-img-6"
-                  width="360"
-                  height="300"
+                  width=""
+                  height=""
                   class=""
                 />
                 <p class="portfolio-cover-text">
@@ -413,11 +568,30 @@
             </li>
             <li class="our-portfolio-section-li">
               <div class="our-portfolio-section-wraper">
+                                <picture>
+                  <source
+                    srcset="./images/project-card-img-5.jpg 1x, ./images/project-card-img-5-2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/project-card-img-5-tablet.jpg    1x,
+                      ./images/project-card-img-5-tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/project-card-img-5-phone.jpg    1x,
+                      ./images/project-card-img-5-phone-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                 <img
                   src="./images/project-card-img-5.jpg"
                   alt="project-card-img-5"
-                  width="360"
-                  height="300"
+                  width=""
+                  height=""
                   class=""
                 />
                 <p class="portfolio-cover-text">
@@ -495,7 +669,7 @@
       </div>
     </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay ">
       <div class="modal">
         <button type="button" class="modal-open"><svg class="btn-icon" width="8" height="8"><use href="./images/icons.svg#icon-close-black-18dp-2-1"></use></svg></button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
