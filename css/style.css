@@ -544,9 +544,10 @@ span {
 
 .footer-main-container {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 72px 24px;
+    gap: 24px;
 }
 
 
@@ -1090,6 +1091,7 @@ color: rgba(46, 47, 66, 0.4);
 
 .footer-main-container {
     padding: 0 108px;
+    gap: 72px 24px;
 }
 
 .modal {
@@ -1202,6 +1204,10 @@ color: rgba(46, 47, 66, 0.4);
         margin-right: auto;
     }
 
+    .footer-form {
+        flex-wrap: nowrap;
+    }
+
     .footer-logo {
         display: inline-block;
     }
@@ -1215,9 +1221,6 @@ color: rgba(46, 47, 66, 0.4);
         margin-right: 120px;
     }
 
-    .subscribe-section {
-        
-    }
 
     .footer-main-wraper {
         display: flex;
