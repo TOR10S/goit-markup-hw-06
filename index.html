@@ -49,27 +49,31 @@
         </svg></button>
       </div>
     </header>
-    <div class="mobile-menu">
+    <div class="mobile-menu is-open">
       <button class="mobile-menu-close" type="">
         <svg class="close-button-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
         </svg>
       </button>
+      <nav class="mobile-menu-nav">
       <ul class="mobile-menu-list">
         <li>
-          <a class="mobile-menu-link" href="./index.html">Studio</a>
+          <a class="mobile-menu-link blue" href="./index.html">Studio</a>
         </li>
         <li><a class="mobile-menu-link" href="">Portfolio</a></li>
         <li><a class="mobile-menu-link" href="">Contacts</a></li>
       </ul>
+    </nav>
+    <address class="mobile-menu-adress">
       <ul class="mobile-menu-contacts">
         <li>
-          <a class="mobile-contacts-item" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          <a class="mobile-contacts-item blue" href="tel:+110001111111">+11 (000) 111-11-11</a>
         </li>
         <li>
           <a class="mobile-contacts-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
       </ul>
+    </address>
       <ul class="mobile-menu-soc">
         <li class="team-icons-list">
           <a href="" class="team-icons">
@@ -667,7 +671,7 @@
       
     </div>
     </footer>
-    <div class="modal-overlay ">
+    <div class="modal-overlay">
       <div class="modal">
         <button type="button" class="modal-open"><svg class="btn-icon" width="8" height="8"><use href="./images/icons.svg#icon-close-black-18dp-2-1"></use></svg></button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
@@ -718,7 +722,8 @@
         <div class="modal-checkbox-wraper">
             <input type="checkbox" name="user-privacy" id="user-privacy" value="true" class="modal-checkbox visually-hidden"/>
           <label for="user-privacy" class="checkbox-text">
-            <span class="checkbox-view"><svg class="check-icon" width="10" height="8"><use href="./images/icons.svg#icon-Vector"></use></svg></span>I accept the terms and conditions of the <a href="./index.html" class="modal-link">Privacy Policy</a>
+            <span class="checkbox-view"><svg class="check-icon" width="10" height="8"><use href="./images/icons.svg#icon-Vector"></use></svg></span><span>I accept the terms and conditions of the <a href="./index.html" class="modal-link">Privacy Policy</a>
+            </span>
           </label>
         </div>
           <button class="modal-button" type="submit">Send</button>
