@@ -50,6 +50,7 @@ span {
         display: flex;
         align-items: center;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        margin-left: auto;
 }
 
 .header-logo {
@@ -61,7 +62,6 @@ span {
     letter-spacing: 0.03em;
     color: #4d5ae5;
     text-transform: uppercase;
-    margin-right: 76px
 }
 
 .address-info {
@@ -182,7 +182,7 @@ span {
     line-height: 1.5;
     color: #F4F4FD;
     letter-spacing: 0.02em;
-    width: 288px;
+    width: 100%;
 }
 
 .link {
@@ -218,8 +218,9 @@ span {
 
 .address-email-link {
     display: block;
-    font-size: 16px;
-    line-height: 1.5;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -230,14 +231,15 @@ span {
 }
 
 .hero-section-header {
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
-    max-width: 496px;
+    max-width: 216px;
     margin-left:  auto;
     margin-right:  auto;
+    margin-bottom: 72px;
 }
 
 .hero-section-button {
@@ -303,7 +305,7 @@ span {
 }
 
 .container {
-    width: 320px;
+    max-width: 320px;
     /* width: 1158px; */
     padding-left: 16px;
     padding-right: 16px;
@@ -317,8 +319,9 @@ span {
 }
 
 .hero-section {
-    padding: 188px 0;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);;
+    padding: 72px 0;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    max-width: 320px;
 }
 
 .section {
@@ -341,6 +344,7 @@ span {
     display: flex;
     gap: 72px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .our-portfolio-section-ul {
@@ -359,7 +363,6 @@ span {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     padding-top: 16px;
     padding-bottom: 16px;
-    min-width: 320px;
 }
 
 .header-container {
@@ -369,7 +372,6 @@ span {
 
 .header-nav-section {
     display: flex;
-    margin-right: auto;
     align-items: center;
 }
 
@@ -379,7 +381,6 @@ span {
 }
 
 .address-info-section {
-    display: none;
     gap: 40px
 }
 
@@ -400,6 +401,7 @@ span {
 
 .address-info {
     margin-left: auto;
+    display:none;
 }
 
 .icon-list {
@@ -523,7 +525,6 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto; 
     margin-bottom: 72px;
 }
 
@@ -533,7 +534,6 @@ span {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    max-width: 264px;
     margin-bottom: 16px;
     text-align: center;
 }
@@ -546,16 +546,12 @@ span {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 72px
+    gap: 72px 24px;
 }
 
-.our-portfolio-section-li:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .our-portfolio-section-li {
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .modal-overlay {
@@ -975,11 +971,16 @@ color: rgba(46, 47, 66, 0.4);
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
     .container {
-        width: 768px;
+        max-width: 768px;
     }
 
     .header {
     padding: 0;
+}
+
+.header-section {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .header-logo {
@@ -988,22 +989,25 @@ color: rgba(46, 47, 66, 0.4);
 
 .header-nav {
     display: flex;
-    margin: 24px 0;
 }
 
     .header-container {
     align-items: center;
-    height: 72px;
 }
 
 .header-button {
     display: none;
 }
 
+.address-info {
+    display:flex;
+}
+
 .hero-section {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
     url(../images/background-image-tablet.jpg);
+    max-width: 768px;
 }
 
 .address-info-section {
@@ -1053,9 +1057,39 @@ color: rgba(46, 47, 66, 0.4);
     flex-direction: row;
 }
 
-.footer-main-wraper {
-    margin-left: auto;
-    margin-right: auto;
+.footer-paragraf {
+    line-height: 1.5;
+    color: #F4F4FD;
+    letter-spacing: 0.02em;
+    width: 264px;
+}
+
+.footer-container {
+    margin-bottom: 0;
+}
+
+.footer-subscribe-input {
+    width: 264px;
+}
+
+.footer-logo {
+    justify-content: flex-start;
+}
+
+.social-links-section {
+    display: inline;
+}
+
+.social-links-paragraf {
+    text-align: left;
+}
+
+.social-links-section {
+    margin-bottom: 0;
+}
+
+.footer-main-container {
+    padding: 0 108px;
 }
 
 .modal {
@@ -1068,22 +1102,40 @@ color: rgba(46, 47, 66, 0.4);
 
 @media screen and (min-width: 1158px) {
     .container {
-    width: 1158px;
+    max-width: 1158px;
     }
 
     .header-button {
         display: none;
     }
     
+    .header-logo {
+        margin-right: 76px
+    }
+
+    .address-info {
+        display:flex;
+    }
 
     .header-nav {
         display: flex;
+    }
+
+    .header-section {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .address-email-link {
+        font-size: 16px;
+        line-height: 1.24; 
     }
 
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
         url(../images/background-image.jpg);
+        max-width: 1440px;
     }
 
     .address-info-section {
@@ -1093,6 +1145,7 @@ color: rgba(46, 47, 66, 0.4);
     .main-section-subheader {
     font-weight: 500;
     font-size: 20px;
+    text-align: left;
     }
 
     .main-section-paragraf {
@@ -1128,6 +1181,16 @@ color: rgba(46, 47, 66, 0.4);
 
     .our-portfolio-section-li {
         width: calc((100% - 48px) / 3);
+    }
+
+    .our-portfolio-section-li:hover {
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .our-portfolio-section-li {
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: none;
     }
     
     .footer-main-wraper {
@@ -1165,6 +1228,14 @@ color: rgba(46, 47, 66, 0.4);
     .subscribe-section {
         display: flex;
         flex-direction: column;
+    }
+
+    .footer-paragraf {
+        width: 264px;
+    }
+
+    .footer-container {
+        margin-bottom: 0;
     }
 
     .social-links-paragraf {
@@ -1206,6 +1277,4 @@ color: rgba(46, 47, 66, 0.4);
 
 }
 
-@media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
-    
-}
+@media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {}
