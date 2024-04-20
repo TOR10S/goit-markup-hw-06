@@ -1225,7 +1225,7 @@ color: rgba(46, 47, 66, 0.4);
         flex-direction: row;
         justify-content: flex-start;
         gap: 0;
-        width: auto;
+        width: 100%;
     }
 
     .footer-social-and-logo-wraper {
