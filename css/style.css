@@ -576,6 +576,12 @@ span {
     visibility: visible;
 }
 
+.mobile-menu.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+
 .modal {
     background-color: #FCFCFC;
     border-radius: 4px;
