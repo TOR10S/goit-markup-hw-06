@@ -385,7 +385,7 @@ span {
 }
 
 .facts-section {
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .our-team-container {
@@ -547,7 +547,6 @@ span {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 24px;
 }
 
 
@@ -794,7 +793,7 @@ color: rgba(46, 47, 66, 0.4);
 .check-icon {
     fill: #ffffff;
 }
-.modal-checkbox:checked + .checkbox-text span {
+.modal-checkbox:checked + .checkbox-text .checkbox-view {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
@@ -955,6 +954,7 @@ color: rgba(46, 47, 66, 0.4);
 }
 
 .mobile-contacts-item {
+    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -1034,6 +1034,19 @@ color: rgba(46, 47, 66, 0.4);
     rgba(46, 47, 66, 0.7)),
     url(../images/background-image-tablet.jpg);
     max-width: 768px;
+}
+
+.hero-section-header {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+    max-width: 496px;
+    margin-top: 112px;
+}
+
+.hero-section-button {
+    margin-bottom: 112px;
 }
 
 .address-info-section {
@@ -1124,6 +1137,12 @@ color: rgba(46, 47, 66, 0.4);
     padding: 72px 24px 24px 24px;
 }
 
+.footer-main-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 }
 
@@ -1170,6 +1189,19 @@ color: rgba(46, 47, 66, 0.4);
         max-width: 1440px;
     }
 
+    .hero-section-header {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 48px;
+        max-width: 496px;
+        margin-top: 188px;
+    }
+
+    .hero-section-button {
+        margin-bottom: 188px;
+    }
+
     .address-info-section {
         display: flex;
     }
@@ -1193,6 +1225,10 @@ color: rgba(46, 47, 66, 0.4);
     .features-list {
     flex-wrap: nowrap;
     gap: 24px;
+    }
+
+    .facts-section {
+        padding: 120px 0;
     }
 
     .our-team-section-li {
@@ -1244,6 +1280,7 @@ color: rgba(46, 47, 66, 0.4);
 
     .social-links-section {
         margin-right: 80px; 
+        margin-bottom: 0;
     }
     
     
@@ -1281,6 +1318,10 @@ color: rgba(46, 47, 66, 0.4);
 
     .footer-main-container {
         align-items: start;
+    }
+
+    .footer-subscribe-input {
+        width: 264px;
     }
 
     .social-links-paragraf {
@@ -1323,4 +1364,6 @@ color: rgba(46, 47, 66, 0.4);
 
 }
 
-@media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {}
+@media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    
+}
